@@ -69,7 +69,7 @@ form.addEventListener("submit", function(e){
         }, 1000);
     }
     else{
-        window.location.href = "https://www.youtube.com/watch?v=xvFZjo5PgG0"
+        window.location.href = "../Register/index.html"
     }
 
     function validateAlphabetical(input){
