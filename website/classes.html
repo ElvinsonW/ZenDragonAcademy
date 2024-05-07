@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="css/classes.css"/>
+        <link rel="stylesheet" href="css/navbar.css"/>
+        <script src="script.js"></script>
+        <title>Dragon Classes</title>
+    </head>
+
+    <body>
+        <header>
+            <div class="navbar">
+                <div class="logo">
+                    <img src="img/logo.png"/>
+                    <h2>Zen Dragon</h2>
+                </div>
+
+                <ul class="menu">
+                    <li onclick="navClick(1)"><a class="selected" href="#">Home</a></li>
+                    <li onclick="navClick(2)"><a href="#">Dragon</a></li>
+                    <li onclick="navClick(3)"><a href="#">Classes</a></li>
+                    <li onclick="navClick(4)"><a href="#">Island</a></li>
+                </ul>
+                
+                <button id="register-btn">
+                    <a href="../Register/index.html">Register</a>
+                </button>
+
+                <div id="hamburger-menu">
+                    <input type="checkbox" id="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </header>
+
+        <div class="class-page">
+            <div class="class-description">
+                <div class="class">
+                    <img id="gambar-elemen" src="img/apiClass.png" alt="Gambar">
+                </div>
+                <div class="description">
+                    <h1>Class Description</h1>
+                    <p id="desc">The Deviant Class Dragon’s Egg doesn’t have the same characteristics for each egg. Each egg not bound by the conventional elements that shape the world, but rather pulsates with the essence of a cosmic force so rare. They are said to possess powers that transcend the boundaries of reality itself, manipulating the very fabric of existence with a mere thought.  Indeed, no one knows for certain the characteristics of this class of egg, which is what makes it exceedingly rare.</p>
+                </div>
+            </div>
+    
+            <ul class="element">
+                <li onclick="changeImage('img/apiClass.png', 1)"><img class="clicked" src="img/Api.png"/></li>
+                <li onclick="changeImage('img/anginClass.png', 2)"><img src="img/Angin.png"/></li>
+                <li onclick="changeImage('img/airClass.png', 3)"><img src="img/Air.png"/></li>
+                <li onclick="changeImage('img/tanahClass.png', 4)"><img src="img/Tanah.png"/></li>
+                <li onclick="changeImage('img/deviantClass.png', 5)"><img src="img/Deviant.png"/></li>
+            </ul>
+        </div>
+
+    </body>
+</html>

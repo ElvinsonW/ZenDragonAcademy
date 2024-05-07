@@ -1,0 +1,267 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url(./font/Poppins-Bold.ttf) format('truetype');
+}
+
+@keyframes shake {
+    0% { transform: translateY(0); }
+    10%, 90% { transform: translateY(-1px); }
+    20%, 80% { transform: translateY(1px); }
+    30%, 50%, 70% { transform: translateY(-1px); }
+    40%, 60% { transform: translateY(1px); }
+    100% { transform: translateY(0); }
+}
+  
+.shake{
+    animation: shake 0.8s 1;
+}
+
+body{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    font-family: Poppins;
+    background-color: #302823;
+}
+
+.container{
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    justify-self: center;
+    width: 70vw;
+    height: 50vw;
+    gap: 7%;
+}
+
+.container img{
+    width: 50%;
+    height: auto;
+}
+
+.right-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    color: #FFF;
+    gap: 1vw;  
+    width: 43%;
+}
+
+.right-side .title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.right-side .title h1{
+    font-size: 4.5vw;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+}
+
+.right-side .title p{
+    text-align: center;
+    font-size: 0.9vw;
+    margin: 0;
+}
+
+#form-box{
+    display: flex;
+    flex-direction: column;
+    gap: 1vw; 
+    width: 100%;
+}
+
+input[type="text"]{
+    height: 1.75vw;
+    padding: 0.5vw;
+    outline: none;
+    border: none;
+    border-radius: 0.5vw;
+    font-size: 1vw;
+}
+
+input[type="radio"]{
+    width: 1vw;
+    height: 1vw;
+    margin: 0;
+}
+
+select{
+    height: 10000%;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+input[type="text"]:active,
+input[type="text"]:focus{
+    outline: 2px solid #F38532;
+}
+
+.input-text-box{
+    display: flex;
+    flex-direction: column;   
+    gap: 5px;
+    width: 100%;
+} 
+
+.name{
+    width: 100%;
+    display: flex;
+    gap: 5%;
+}
+
+.name .input-text-box{
+    width: calc(95%/2);
+}
+
+.input-text-box label, .gender label, #terms-conditions label{
+    font-size: 1.1vw;
+    font-weight: bold;
+}
+
+.gender{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vw;
+    width: 100%;
+}
+
+.gender .options{
+    display: flex;
+    gap: 3vw;
+}
+
+.gender .radio-button{
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+
+#terms-conditions{
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    margin: 0;
+}
+
+#terms-conditions input{
+    margin: 0;
+}
+
+.error-message{
+    display: none;
+    margin: 0;
+    color: #FF3737;
+    font-size: 0.8vw;
+}
+
+.register-btn{
+    font-family: Poppins;
+    font-size: 1.2vw;
+    font-weight: bold;
+    height: 3vw;
+    border: none;
+    border-radius: 1.5vh;
+    transform: translateY(0.5vw);
+}
+
+.register-btn:hover{
+    color: #FFF;
+    background-color: #F38532;
+}
+
+.background{
+    display: none;
+} 
+
+@media only screen and (max-width: 1024px) {
+    body{
+        margin: 0;
+        width: 100%;
+        min-height: 170vw;
+    }
+
+    .container{
+        flex-direction: column;
+        width: 80vw;
+        height: 140vw;
+        gap: 2vw;
+    }
+
+    .container img{
+        width: 35%;
+    }
+
+    .right-side .title h1{
+        font-size: 10vw;
+    }
+
+    .right-side .title p{
+        font-size: 2.5vw;
+    }
+
+    .right-side{
+        width: 100%;
+        gap: 5vw;
+    }
+
+    #form-box{
+        gap: 3vw;
+    }
+
+    input[type="text"]{
+        height: 7vw;
+        padding: 1.5vw;
+        border-radius: 2vw;
+        font-size: 4vw;
+    }
+
+    input[type="radio"]{
+        width: 3vw;
+        height: 3vw;
+    }
+
+    .input-text-box label, .gender label, #terms-conditions label{
+        font-size: 3vw;
+        font-weight: bold;
+    }
+
+    .gender{
+        gap: 2vw;
+    }
+
+    .gender .options{
+        gap: 7vw;
+    }
+
+    .gender .options .radio-button{
+        gap: 2vw;
+    }
+
+    .register-btn{
+        height: 9vw;
+        font-size: 3vw;
+        transform: translateY(2vw);
+    }
+
+    #terms-conditions{
+        gap: 2vw;
+    }
+
+    .error-message{
+        display: none;
+        font-size: 2.5vw;
+        margin: 0;
+        color: #FF3737;
+    }
+}
