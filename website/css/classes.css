@@ -147,15 +147,19 @@ ul {
     }
 
     .element{
-        gap: 3.5vw;
+        gap: 4vw;
     }
 
     .element img{
-        width: 10vw;
+        width: 11vw;
     }
 
     .element img:hover{
         transform: scale(1.1) translateY(-0.618rem);
+    }
+
+    .element img.clicked{
+        transform: scale(1.2) translateY(-1rem);
     }
 }
 
