@@ -69,7 +69,7 @@ form.addEventListener("submit", function(e){
         }, 1000);
     }
     else{
-        window.location.href = "../website/classes.html"
+        window.location.href = "./website/classes.html"
     }
 
     function validateAlphabetical(input){
