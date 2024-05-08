@@ -124,7 +124,7 @@ ul {
 
     .class-page{
         height: 150vw;
-        gap: 20vw;
+        gap: 18vw;
     }
     
     .class-description{
@@ -136,10 +136,11 @@ ul {
 
     .description{
         width: 70%;
+        gap: 4vw;
     }
 
     .description h1{
-        font-size: 7vw;
+        font-size: 8vw;
     }
 
     .description #desc{
