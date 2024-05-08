@@ -151,7 +151,7 @@ ul {
     }
 
     .element img{
-        width: 8vw;
+        width: 10vw;
     }
 
     .element img:hover{
@@ -159,9 +159,3 @@ ul {
     }
 }
 
-/* @media (max-width: 600px){
-    .class-page{
-        height: 150vw;
-        gap: 17vw;
-    }
-} */
