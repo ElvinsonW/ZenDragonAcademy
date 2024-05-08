@@ -113,15 +113,28 @@ ul {
 }
 
 @media (max-width: 1024px) {
-
+    body{
+        gap: 1vw;
+    }
     .class-page{
         height: 100vw;
     }
     .class-description{
-        /* flex-direction: column; */
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 90vw;    
-        /* gap: vw; */
+        height: 100vw;  
+    }
+
+    .description{
+        width: 70%;
+    }
+
+    .description h1{
+        font-size: 7vw;
+    }
+
+    .description #desc{
+        font-size: 2vw;
     }
 }
