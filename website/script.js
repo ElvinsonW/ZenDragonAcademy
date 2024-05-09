@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function () {
     checkbox.addEventListener("change", function () {
         if (this.checked) {
             menu.style.opacity = 1;
-            menu.style.width = 40 + "vw"
+            menu.style.width = 30 + "vw"
         } else {
             menu.style.opacity = 0;
             menu.style.width = 0 + "vw"
