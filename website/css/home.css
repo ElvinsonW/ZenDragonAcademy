@@ -13,10 +13,24 @@ body{
     display: flex;
     flex-direction: column;
     height: 100vh;
-    min-height: 210vw;
+    min-height: 220vw;
     margin: 0;
     gap: 2vw;
     background-color: #302823;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.front-page{
+    display: flex;
+    flex-direction: column;
+    height: 50vw;
+    width: 100vw;
 }
 
 .judul{
@@ -49,120 +63,222 @@ img.bgNaga {
     width: 35vw; /* Sesuaikan lebar gambar */
 }
 
+.container{
+    display: flex;
+    flex-direction: column;
+}
 
 .kelas-naga{
-    margin-top: 5vw;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20vw, 1fr));
-    gap: 20vw;
-}
-
-.gambar-kelas{
-    margin: 5vw;
+    display: flex;
+    align-items: start;
     justify-content: center;
+    align-items: center;
+    gap: 3vw;
+    margin-bottom: 7vw;
 }
 
-.gambar-kelas img{
+.kelas-naga img{
     width: 47vw;
 }
 
 .deskripsi-kelas{
-    color: white;
+    font-family: 'Jockey One', sans-serif;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 35vw;
+    color: white;
 }
 
 .deskripsi-kelas h4{
-    font-family: 'Jockey One', sans-serif;
     font-size: 5vw;
     font-weight: 300;
+    margin: 0;
+    margin-bottom: 1vw;
 }
 
 .deskripsi-kelas p{
-    font-family: 'Jockey One', sans-serif;
-    font-size: 2.3vw;
+    font-size: 2vw;
     letter-spacing: 1.168;
-    margin-top: -4vw;
+    margin: 0;
+    margin-bottom: 3vw;
 }
 
 .tombol{
-    margin-top: 1vw;
-    font-family: sans-serif;
-    letter-spacing: 0.08vw;
-    font-size: 1.168vw;
-    width: 18vw;
-    height: 3.5vw;
-    color: white;
-    background-color: #342b24;
+    width: 15vw;
+    height: 4vw;
+    border: none;
     border-radius: 30vw;
+    color: white;
+    background-color: #F38532;
     cursor: pointer;
     transition: all 0.2s ease-out;
 }
 
-.deskripsi-kelas button:hover{
+.tombol a{
+    letter-spacing: 0.05vw;
+    font-size: 1.5vw;
+    font-weight: bold;
+    text-decoration: none;
+    color: #FFF;
+}
+
+.tombol:hover{
     transform: translateY(-0.5vw);
-    color: coral;
+    background-color: #FFF;
     font-weight: 600;
 }
 
+.tombol:hover a{
+    color: #302823;
+}
+
 .hero{
-    /* justify-content: center; */
-    align-items: center;
     display: flex;
+    align-items: center;
     flex-direction: column;
+    margin-bottom: 10vw;
 }
 
 .judul-hero{
     font-family: 'Jockey One', sans-serif;
     font-size: 5vw;
     font-weight: 300;
-    color: white;
-    /* text-align: center; */
+    margin: 0;
+    margin-bottom: 3vw;
     letter-spacing: 0.2vw;
+    color: white;
+
 }
 
 .gambar-hero{
-    margin: -4vw 0 2vw 0;
     width: 80vw;
+    margin-bottom: 4vw;
 }
 
 .isle{
-    margin-top: 8vw;
     display: flex;
     justify-content: center;
+    width: fit-content;
+    background-color: #282320;
+    /* padding: 5vw 0; */
 }
 
 .deskripsi-isle{
-    width: 40vw;
-    background-color: #282320;
-    color: white;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
+    justify-content: center;
+    width: fit-content;
+    padding: 0 5vw;
+    color: white;
 }
 
 .deskripsi-isle h4{
     font-family: 'Jockey One', sans-serif;
-    font-size: 3vw;
+    font-size: 5vw;
     font-weight: 300;
-    color: white;
-    /* text-align: center; */
     letter-spacing: 0.1vw;
+    margin: 0;
+    margin-bottom: 1vw;
+    color: white;
 }
 
 .deskripsi-isle p{
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.168vw;
-    font-weight: bold;
-    color: white;
-    /* text-align: center; */
+    font-family: 'Jockey One', sans-serif;
+    font-size: 2vw;
     letter-spacing: 0.1vw;
+    width: 30vw;
+    margin: 0;
+    margin-bottom: 3vw;
+    color: white;
 }
 
-.deskripsi-isle div button{
-    margin-top: 7vw;
-}
-
-.gambar-isle img{
+.gambar-isle{
     width: 35vw;
+}
+
+@media only screen and (max-width: 1024px){
+    body{
+        min-height: 430vw;
+    }
+    .kelas-naga{
+        flex-direction: column;
+        gap: 0vw;
+        margin-bottom: 10vw;
+    }
+
+    .kelas-naga img{
+        width: 60vw;
+    }
+
+    .deskripsi-kelas{
+        align-items: center;
+        width: 100%;
+    }
+
+    .deskripsi-kelas h4{
+        font-size: 9vw;
+        margin-bottom: 2vw;
+    }
+
+    .deskripsi-kelas p{
+        font-size: 4vw;
+        text-align: center;
+        width: 70%;
+        margin-bottom: 6vw;
+    }
+
+    .tombol{
+        width: 30vw;
+        height: 8vw;
+    }
+
+    .tombol a{
+        font-size: 3.5vw;
+    }
+
+    .hero{
+        margin-bottom: 15vw;
+    }
+
+    .judul-hero{
+        font-size: 9vw;
+        margin-bottom: 7vw;
+    }
+
+    .gambar-hero{
+        width: 90vw;
+        margin-bottom: 10vw;
+    }
+
+    .isle{
+        align-items: center;
+        flex-direction: column;
+        gap: 3vw;
+        padding: 7vw 0;
+        width: 90vw;
+    }
+
+    .gambar-isle{
+        order: -1;
+        width: 60%;
+    }
+
+    .deskripsi-isle{
+        align-items: center;
+    }
+
+    .deskripsi-isle h4{
+        font-size: 9vw;
+        margin-bottom: 2vw;
+    }
+
+    .deskripsi-isle p{
+        font-size: 4vw;
+        text-align: center;
+        width: 60vw;
+        margin-bottom: 6vw;
+    }
 }

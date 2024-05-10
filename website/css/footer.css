@@ -1,4 +1,5 @@
 footer{
+    font-family: 'Jockey One';
     position: absolute;
     left: 0;
     bottom: 0;
@@ -20,6 +21,10 @@ footer{
     gap: 6vw;
     margin: 0;
     padding: 0;
+}
+
+.footer-menu li{
+    list-style: none;
 }
 
 .footer-menu li a{
