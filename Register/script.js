@@ -56,8 +56,8 @@ form.addEventListener("submit", function(e){
         email_error.innerText = "*Email must be filled"
         email_error.style.display = "block"
     }
-    else if(!(email.value.includes("@") && email.value.endsWith(".com"))){
-        email_error.innerText = "*Email must include @ or end with .com"
+    else if(!(email.value.endsWith("@gmail.com"))){
+        email_error.innerText = "*Email must end with @gmail.com"
         email_error.style.display = "block"
     }
     else if(!termsconditions.checked){
@@ -69,7 +69,7 @@ form.addEventListener("submit", function(e){
         }, 1000);
     }
     else{
-        window.location.href = "./website/classes.html"
+        window.location.href = "../website/classes.html"
     }
 
     function validateAlphabetical(input){
