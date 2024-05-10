@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="css/home.css"/>
     <link rel="stylesheet" href="css/navbar.css"/>
+    <link rel="stylesheet" href="css/footer.css"/>
     <script src="script.js"></script>
     <title>Home</title>
 </head>
@@ -22,13 +23,14 @@
                 <li onclick="navClick(1)"><a class="selected" href="#">Home</a></li>
                 <li onclick="navClick(2)"><a href="#">Dragon</a></li>
                 <li onclick="navClick(3)"><a href="#">Classes</a></li>
-                <li onclick="navClick(4)"><a href="#">Island</a></li>
-                <li onclick="navClick(5)"><a href="#">Register</a></li>
+                <li onclick="navClick(4)"><a href="#">Isle of Berk</a></li>
+                <li onclick="navClick(5)"><a href="../Register/index.html">Register</a></li>
             </ul>
             
             <button id="register-btn">
                 <a href="../Register/index.html">Register</a>
             </button>
+            
 
             <div id="hamburger-menu">
                 <input type="checkbox" id="menu-toggle">
@@ -39,47 +41,63 @@
         </div>
     </header>
 
-    <img src="img/bgNaga.png" class="bgNaga"/>
-    <h1 class="judul">Zen Dragon Academy</h4>
-    <h4 class="slogan">"Master the Elements,<br/>Master Yourself"</h4>
-    <img src="img/garis.png" class="garis"/>
-
-    <div class="garis-bawah1"></div>
-
-    <div class="kelas-naga">
-        <div class="gambar-kelas">
-            <img src="img/dragonClasses.png"/>
+    <div class="container">
+        <div class="front-page">
+            <img src="img/bgNaga.png" class="bgNaga"/>
+            <h1 class="judul">Zen Dragon Academy</h4>
+            <h4 class="slogan">"Master the Elements,<br/>Master Yourself"</h4>
+            <img src="img/garis.png" class="garis"/>
+    
         </div>
 
-        <div class="deskripsi-kelas">
-            <h4>Dragon Classes</h4>
-            <p>Explore various dragon's element and<br/>develop it into the level of Zen!</p>
-            <button class="tombol">See More</button>
-        </div>
-    </div>
-
-    <div class="garis-bawah2"></div>
-    <div class="hero">
-        <h4 class="judul-hero">Our Heroes</h4>
-        <img class="gambar-hero" src="img/ourHeroes.png"/>
-        <button class="tombol">See Details</button>
-    </div>
-
-    <div class="garis-bawah2"></div>
-
-    <div class="isle">
-        <div class="deskripsi-isle">
-            <div>
-                <h4>Journey on Isle of Berk</h4>
-                <p>Take your adventure in the<br/>destiny of Isle of Berk!</p>
-                <button class="tombol">Isle of Berk</button>
+        <div class="kelas-naga">
+            <div class="gambar-kelas">
+                <img src="img/dragonClasses.png"/>
+            </div>
+    
+            <div class="deskripsi-kelas">
+                <h4>Dragon Classes</h4>
+                <p>Explore various dragon's element and<br/>develop it into the level of Zen!</p>
+                <button class="tombol">See More</button>
             </div>
         </div>
 
-        <div class="gambar-isle">
-            <img src="img/isle.png"/>
+        <div class="hero">
+            <h4 class="judul-hero">Our Heroes</h4>
+            <img class="gambar-hero" src="img/ourHeroes.png"/>
+            <button class="tombol">See Details</button>
+        </div>
+
+        <div class="isle">
+            <div class="deskripsi-isle">
+                <div>
+                    <h4>Journey on Isle of Berk</h4>
+                    <p>Take your adventure in the<br/>destiny of Isle of Berk!</p>
+                    <button class="tombol">Isle of Berk</button>
+                </div>
+            </div>
+    
+            <div class="gambar-isle">
+                <img src="img/isle.png"/>
+            </div>
         </div>
     </div>
+
+    <footer>
+        <div class="logo">
+            <img src="img/logo.png"/>
+            <h2>Zen<br>Dragon</h2>
+        </div>
+
+        <ul class="footer-menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Dragon</a></li>
+            <li><a href="#">Classes</a></li>
+            <li><a href="#">Isle of Berk</a></li>
+        </ul>
+
+        <p>Zen Dragon Academy, Inc. All right Reserved.</p>
+    </footer>
 
 </body>
 

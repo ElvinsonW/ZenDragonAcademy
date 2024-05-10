@@ -9,6 +9,13 @@
 }
 
 body{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    min-height: 210vw;
+    margin: 0;
+    gap: 2vw;
     background-color: #302823;
 }
 
@@ -42,21 +49,6 @@ img.bgNaga {
     width: 35vw; /* Sesuaikan lebar gambar */
 }
 
-.garis-bawah1{
-    width: 100%;
-    margin-top: 13vw;
-    height: 1.168vw;
-    color: #d9d9d9;
-    background-color: #d9d9d9;
-}
-
-.garis-bawah2{
-    width: 100%;
-    margin-top: 8vw;
-    height: 1.168vw;
-    color: #d9d9d9;
-    background-color: #d9d9d9;
-}
 
 .kelas-naga{
     margin-top: 5vw;
