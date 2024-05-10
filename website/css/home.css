@@ -1,0 +1,176 @@
+@font-face {
+    font-family: 'Jockey One';
+    src: url('../font/JockeyOne-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../font/Poppins-Light.ttf') format('truetype');
+}
+
+body{
+    background-color: #302823;
+}
+
+.judul{
+    font-family: 'Jockey One', sans-serif;
+    color: white;
+    letter-spacing: 0.4vw;
+    font-size: 6vw;
+    margin: 6vw 6vw;
+}
+
+.slogan{
+    color: white;
+    font-weight: bold;
+    font-family: 'Poppins';
+    letter-spacing: 0.168vw;
+    font-size: 2vw;
+    margin-left: 15vw;
+}
+
+.garis {
+    width: 20vw;
+    margin: 2vw 20vw;
+}
+
+img.bgNaga {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1; /* Mengatur gambar berada di belakang elemen lain */
+    width: 35vw; /* Sesuaikan lebar gambar */
+}
+
+.garis-bawah1{
+    width: 100%;
+    margin-top: 13vw;
+    height: 1.168vw;
+    color: #d9d9d9;
+    background-color: #d9d9d9;
+}
+
+.garis-bawah2{
+    width: 100%;
+    margin-top: 8vw;
+    height: 1.168vw;
+    color: #d9d9d9;
+    background-color: #d9d9d9;
+}
+
+.kelas-naga{
+    margin-top: 5vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20vw, 1fr));
+    gap: 20vw;
+}
+
+.gambar-kelas{
+    margin: 5vw;
+    justify-content: center;
+}
+
+.gambar-kelas img{
+    width: 47vw;
+}
+
+.deskripsi-kelas{
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.deskripsi-kelas h4{
+    font-family: 'Jockey One', sans-serif;
+    font-size: 5vw;
+    font-weight: 300;
+}
+
+.deskripsi-kelas p{
+    font-family: 'Jockey One', sans-serif;
+    font-size: 2.3vw;
+    letter-spacing: 1.168;
+    margin-top: -4vw;
+}
+
+.tombol{
+    margin-top: 1vw;
+    font-family: sans-serif;
+    letter-spacing: 0.08vw;
+    font-size: 1.168vw;
+    width: 18vw;
+    height: 3.5vw;
+    color: white;
+    background-color: #342b24;
+    border-radius: 30vw;
+    cursor: pointer;
+    transition: all 0.2s ease-out;
+}
+
+.deskripsi-kelas button:hover{
+    transform: translateY(-0.5vw);
+    color: coral;
+    font-weight: 600;
+}
+
+.hero{
+    /* justify-content: center; */
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.judul-hero{
+    font-family: 'Jockey One', sans-serif;
+    font-size: 5vw;
+    font-weight: 300;
+    color: white;
+    /* text-align: center; */
+    letter-spacing: 0.2vw;
+}
+
+.gambar-hero{
+    margin: -4vw 0 2vw 0;
+    width: 80vw;
+}
+
+.isle{
+    margin-top: 8vw;
+    display: flex;
+    justify-content: center;
+}
+
+.deskripsi-isle{
+    width: 40vw;
+    background-color: #282320;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.deskripsi-isle h4{
+    font-family: 'Jockey One', sans-serif;
+    font-size: 3vw;
+    font-weight: 300;
+    color: white;
+    /* text-align: center; */
+    letter-spacing: 0.1vw;
+}
+
+.deskripsi-isle p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.168vw;
+    font-weight: bold;
+    color: white;
+    /* text-align: center; */
+    letter-spacing: 0.1vw;
+}
+
+.deskripsi-isle div button{
+    margin-top: 7vw;
+}
+
+.gambar-isle img{
+    width: 35vw;
+}
