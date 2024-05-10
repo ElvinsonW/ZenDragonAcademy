@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link rel="stylesheet" href="css/classes.css"/>
         <link rel="stylesheet" href="css/navbar.css"/>
-        <script src="script.js"></script>
+        <link rel="stylesheet" href="css/footer.css"/>
         <title>Dragon Classes</title>
     </head>
 
@@ -22,13 +22,14 @@
                     <li onclick="navClick(1)"><a class="selected" href="#">Home</a></li>
                     <li onclick="navClick(2)"><a href="#">Dragon</a></li>
                     <li onclick="navClick(3)"><a href="#">Classes</a></li>
-                    <li onclick="navClick(4)"><a href="#">Island</a></li>
-                    <li onclick="navClick(5)"><a href="#">Register</a></li>
+                    <li onclick="navClick(4)"><a href="#">Isle of Berk</a></li>
+                    <li onclick="navClick(5)"><a href="../Register/index.html">Register</a></li>
                 </ul>
                 
                 <button id="register-btn">
                     <a href="../Register/index.html">Register</a>
                 </button>
+                
 
                 <div id="hamburger-menu">
                     <input type="checkbox" id="menu-toggle">
@@ -39,14 +40,14 @@
             </div>
         </header>
 
-        <div class="class-page">
+        <div class="container">
             <div class="class-description">
                 <div class="image">
                     <img id="gambar-elemen" src="img/apiClass.png" alt="Gambar">
                 </div>
                 <div class="description">
                     <h1>Class Description</h1>
-                    <p id="desc">The Deviant Class Dragon’s Egg doesn’t have the same characteristics for each egg. Each egg not bound by the conventional elements that shape the world, but rather pulsates with the essence of a cosmic force so rare. They are said to possess powers that transcend the boundaries of reality itself, manipulating the very fabric of existence with a mere thought.  Indeed, no one knows for certain the characteristics of this class of egg, which is what makes it exceedingly rare.</p>
+                    <p id="desc">The Fire Class Dragon is a formidable force of nature, embodying the relentless power of flames. With a mere exhale, it can unleash torrents of scorching fire, turning all in its path to ash. Its very presence raises the temperature, igniting the air around it and creating an inferno that consumes all in its vicinity. Masters of combustion, these dragons can manipulate flames at will, shaping them into devastating firestorms or precise blasts of searing heat.</p>
                 </div>
             </div>
     
@@ -58,6 +59,23 @@
                 <li onclick="changeImage('img/deviantClass.png', 5)"><img src="img/Deviant.png"/></li>
             </ul>
         </div>
+        
+        <footer>
+            <div class="logo">
+                <img src="img/logo.png"/>
+                <h2>Zen<br>Dragon</h2>
+            </div>
 
+            <ul class="footer-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Dragon</a></li>
+                <li><a href="#">Classes</a></li>
+                <li><a href="#">Isle of Berk</a></li>
+            </ul>
+
+            <p>Zen Dragon Academy, Inc. All right Reserved.</p>
+        </footer>
+
+        <script src="script.js"></script>
     </body>
 </html>
