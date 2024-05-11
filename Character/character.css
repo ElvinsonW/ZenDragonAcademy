@@ -1,0 +1,141 @@
+@font-face {
+    font-family: 'Jockey One';
+    src: url('../Asset/font/JockeyOne-Regular.ttf') format('truetype');
+}
+
+body {
+    font-family: 'Jockey One';
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8vw;
+    width: 100%;
+    height: 100vh;
+    min-height: 95vw;
+    margin: 0;
+    background-color: #302823;
+}
+
+ul {
+    list-style: none;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 8vw;
+}
+
+.class-description img{
+    width: 30%;
+    border-radius: 5vw;
+}
+
+.class-description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    color: #fff;
+    letter-spacing: 1.618px;
+    width: 45%;
+    height: fit-content;
+}
+
+.description h1{
+    font-size: 5vw;
+    letter-spacing: 3.618px;
+    margin: 0;
+}
+
+.description #desc{
+    font-size: 1.6vw;
+    margin: 0;
+}
+
+.element{
+    display: flex;
+    justify-content: center;
+    gap: 2.5vw;
+    transition: all 1s ease-out;
+    padding: 0;
+    margin: 0;
+}
+
+.element li{
+    cursor: pointer;
+    justify-content: center;
+}
+
+.element img{
+    justify-content: center;
+    transition: all 0.3s ease-out;
+    width: 6vw;
+    height: 6vw;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.element img.clicked {
+    transform: scale(1.168) translateY(-1rem);
+    border-radius: 255px;
+    border: 3px solid #FFC369;
+}
+
+.element img:hover{
+    transform: scale(1.01) translateY(-0.618rem);
+}
+
+@media (max-width: 1024px) {
+    body{
+        min-height: 260vw;
+        gap: 10vw;
+    }
+
+    .class-description img{
+        width: 50%;
+    }
+
+    .container{
+        height: 150vw;
+        gap: 15vw;
+    }
+    
+    .class-description{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .description{
+        width: 70%;
+        gap: 4vw;
+    }
+
+    .description h1{
+        font-size: 8vw;
+    }
+
+    .description #desc{
+        font-size: 3vw;
+    }
+
+    .element{
+        gap: 4vw;
+    }
+
+    .element img{
+        width: 12vw;
+        height: 12vw;
+    }
+}
+

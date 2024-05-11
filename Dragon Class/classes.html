@@ -4,9 +4,9 @@
         <meta charset="UTF-8"/>
         <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <link rel="stylesheet" href="css/classes.css"/>
-        <link rel="stylesheet" href="css/navbar.css"/>
-        <link rel="stylesheet" href="css/footer.css"/>
+        <link rel="stylesheet" href="classes.css"/>
+        <link rel="stylesheet" href="../Navbar/navbar.css"/>
+        <link rel="stylesheet" href="../Footer/footer.css"/>
         <title>Dragon Classes</title>
     </head>
 
@@ -14,23 +14,23 @@
         <header>
             <div class="navbar">
                 <div class="logo">
-                    <img src="img/logo.png"/>
+                    <img src="../Asset/img/logo.png"/>
                     <h2>Zen<br>Dragon</h2>
                 </div>
-
+    
                 <ul class="menu">
-                    <li onclick="navClick(1)"><a href="home.html">Home</a></li>
-                    <li onclick="navClick(2)"><a href="#">Dragon</a></li>
-                    <li onclick="navClick(3)"><a class="selected" href="#">Classes</a></li>
+                    <li onclick="navClick(1)"><a href="../Home/home.html">Home</a></li>
+                    <li onclick="navClick(2)"><a href="../Character/character.html">Character</a></li>
+                    <li onclick="navClick(3)"><a class="selected" href="#">Dragon Class</a></li>
                     <li onclick="navClick(4)"><a href="#">Isle of Berk</a></li>
-                    <li onclick="navClick(5)"><a href="../Register/index.html">Register</a></li>
+                    <li onclick="navClick(5)"><a href="../Register/register.html">Register</a></li>
                 </ul>
                 
                 <button id="register-btn">
-                    <a href="../Register/index.html">Register</a>
+                    <a href="../Register/register.html">Register</a>
                 </button>
                 
-
+    
                 <div id="hamburger-menu">
                     <input type="checkbox" id="menu-toggle">
                     <span></span>
@@ -42,9 +42,7 @@
 
         <div class="container">
             <div class="class-description">
-                <div class="image">
-                    <img id="gambar-elemen" src="img/apiClass.png" alt="Gambar">
-                </div>
+                <img id="gambar-elemen" src="../Asset/img/apiClass.png" alt="Gambar">
                 <div class="description">
                     <h1>Class Description</h1>
                     <p id="desc">The Fire Class Dragon is a formidable force of nature, embodying the relentless power of flames. With a mere exhale, it can unleash torrents of scorching fire, turning all in its path to ash. Its very presence raises the temperature, igniting the air around it and creating an inferno that consumes all in its vicinity. Masters of combustion, these dragons can manipulate flames at will, shaping them into devastating firestorms or precise blasts of searing heat.</p>
@@ -52,17 +50,17 @@
             </div>
     
             <ul class="element">
-                <li onclick="changeImage('img/apiClass.png', 1)"><img class="clicked" src="img/Api.png"/></li>
-                <li onclick="changeImage('img/anginClass.png', 2)"><img src="img/Angin.png"/></li>
-                <li onclick="changeImage('img/airClass.png', 3)"><img src="img/Air.png"/></li>
-                <li onclick="changeImage('img/tanahClass.png', 4)"><img src="img/Tanah.png"/></li>
-                <li onclick="changeImage('img/deviantClass.png', 5)"><img src="img/Deviant.png"/></li>
+                <li onclick="changeImage('../Asset/img/apiClass.png', 1)"><img class="clicked" src="../Asset/img/Api.png"/></li>
+                <li onclick="changeImage('../Asset/img/anginClass.png', 2)"><img src="../Asset/img/Angin.png"/></li>
+                <li onclick="changeImage('../Asset/img/airClass.png', 3)"><img src="../Asset/img/Air.png"/></li>
+                <li onclick="changeImage('../Asset/img/tanahClass.png', 4)"><img src="../Asset/img/Tanah.png"/></li>
+                <li onclick="changeImage('../Asset/img/deviantClass.png', 5)"><img src="../Asset/img/Deviant.png"/></li>
             </ul>
         </div>
         
         <footer>
             <div class="logo">
-                <img src="img/logo.png"/>
+                <img src="../Asset/img/logo.png"/>
                 <h2>Zen<br>Dragon</h2>
             </div>
 
@@ -76,6 +74,7 @@
             <p>Zen Dragon Academy, Inc. All right Reserved.</p>
         </footer>
 
+        <script src="../Navbar/navbar.js"></script>
         <script src="script.js"></script>
     </body>
 </html>

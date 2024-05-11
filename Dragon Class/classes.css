@@ -1,6 +1,6 @@
     @font-face {
         font-family: 'Jockey One';
-        src: url('../font/JockeyOne-Regular.ttf') format('truetype');
+        src: url('../Asset/font/JockeyOne-Regular.ttf') format('truetype');
     }
 
     body {
@@ -25,26 +25,17 @@
         display: flex;
         flex-direction: column;
         width: 100%;
-        gap: 10vw;
+        gap: 8vw;
     }
 
-    #gambar-elemen{
-        width: 100%;
+    .class-description img{
+        width: 35%;
     }
 
     .class-description {
         display: flex;
         justify-content: center;
         gap: 5vw;
-        height: 35vw;
-    }
-
-    .image {
-        display: flex;
-        align-items: center;
-        text-align: center;
-        width: 35%;
-        justify-content: center;
     }
 
     .description {
@@ -99,13 +90,13 @@
         transform: scale(1.01) translateY(-0.618rem);
     }
 
-    @media (max-width: 1024px) {
+    @media only screen and (max-width: 1024px){
         body{
-            min-height: 240vw;
+            min-height: 250vw;
             gap: 10vw;
         }
 
-        .image{
+        .class-description img{
             width: 50%;
         }
 
@@ -118,7 +109,6 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            height: 110vw;  
         }
 
         .description{
@@ -141,9 +131,5 @@
         .element img{
             width: 12vw;
         }
-/* 
-        .element img:hover {
-            transform: none;
-        } */
     }
 

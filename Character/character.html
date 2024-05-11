@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="character.css"/>
+        <link rel="stylesheet" href="../Navbar/navbar.css"/>
+        <link rel="stylesheet" href="../Footer/footer.css"/>
+        <title>Heroes</title>
+    </head>
+
+    <body>
+        <header>
+            <div class="navbar">
+                <div class="logo">
+                    <img src="../Asset/img/logo.png"/>
+                    <h2>Zen<br>Dragon</h2>
+                </div>
+    
+                <ul class="menu">
+                    <li onclick="navClick(1)"><a href="../Home/home.html">Home</a></li>
+                    <li onclick="navClick(2)"><a class="selected" href="#">Character</a></li>
+                    <li onclick="navClick(3)"><a href="../Dragon Class/classes.html">Dragon Class</a></li>
+                    <li onclick="navClick(4)"><a href="#">Isle of Berk</a></li>
+                    <li onclick="navClick(5)"><a href="../Register/register.html">Register</a></li>
+                </ul>
+                
+                <button id="register-btn">
+                    <a href="../Register/register.html">Register</a>
+                </button>
+                
+    
+                <div id="hamburger-menu">
+                    <input type="checkbox" id="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+            <div class="class-description">
+                <img id="gambar-elemen" src="../Asset/img/ignatius.png" alt="Gambar">
+                <div class="description">
+                    <h1 id="character-name">Ignatius Rey</h1>
+                    <p id="desc">Ignatius Rey is a fiery and passionate dragon tamer, whose very presence seems to radiate with the warmth of the sun. Ignatius is a force to be reckoned with, his affinity for fire dragons matched only by his unwavering determination. When Ignatius is in the presence of dragons, it's as if he comes alive, his passion and reverence for these majestic creatures shining through in every interaction. Ignatius possesses an innate understanding of fire dragons, a sixth sense that allows him to anticipate their every move and respond with lightning-fast reflexes.</p>
+                </div>
+            </div>
+    
+            <ul class="element">
+                <li onclick="changeImage('../Asset/img/ignatius.png', 1)"><img class="clicked" src="../Asset/img/ignatius.png"/></li>
+                <li onclick="changeImage('../Asset/img/lareina.png', 2)"><img src="../Asset/img/lareina.png"/></li>
+                <li onclick="changeImage('../Asset/img/rocky.png', 3)"><img src="../Asset/img/rocky.png"/></li>
+                <li onclick="changeImage('../Asset/img/flowy.png', 4)"><img src="../Asset/img/flowy.png"/></li>
+                <li onclick="changeImage('../Asset/img/lavenderia.png', 5)"><img src="../Asset/img/lavenderia.png"/></li>
+            </ul>
+        </div>
+        
+        <footer>
+            <div class="logo">
+                <img src="../Asset/img/logo.png"/>
+                <h2>Zen<br>Dragon</h2>
+            </div>
+
+            <ul class="footer-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Dragon</a></li>
+                <li><a href="#">Classes</a></li>
+                <li><a href="#">Isle of Berk</a></li>
+            </ul>
+
+            <p>Zen Dragon Academy, Inc. All right Reserved.</p>
+        </footer>
+
+        <script src="../Navbar/navbar.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>

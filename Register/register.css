@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Poppins';
-    src: url(./font/Poppins-Bold.ttf) format('truetype');
+    src: url('../Asset/font/Poppins-Bold.ttf') format('truetype');
 }
 
 @keyframes shake {

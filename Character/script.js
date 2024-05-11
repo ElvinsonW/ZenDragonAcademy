@@ -29,34 +29,3 @@ function changeImage(filename, elemenKe){
         document.getElementById("desc").innerHTML="The Deviant Class Dragon is a mesmerizing anomaly, diverging from elemental norms with an aura of mystery and unpredictability. Its form, sleek and iridescent, hints at ancient wisdom and futuristic innovation. Unbound by elemental constraints, it possesses abilities that defy classification—rumored to bend reality and weave illusions. Some see it as a guardian of ancient secrets, others as a herald of transformation.";
     }
 }
-
-function navClick(navKe){
-    // navbar
-    // Menghilangkan kelas 'selected' dari semua elemen <a> di dalam .menu
-    document.querySelectorAll('.menu li a').forEach(function(a) {
-        a.classList.remove('selected');
-    });
-
-    // Menambahkan kelas 'selected' ke elemen <a> di dalam <li> yang diklik
-    var clickedLi = document.querySelector('.menu li:nth-child(' + navKe + ')');
-    var clickedA = clickedLi.querySelector('a');
-    if (!clickedA.classList.contains('selected')) {
-        clickedA.classList.add('selected');
-    }
-}
-
-
-// untuk navbar
-document.addEventListener("DOMContentLoaded", function () {
-    // side bar
-    const checkbox = document.getElementById("menu-toggle");
-    const menu = document.querySelector(".menu");
-
-    checkbox.addEventListener("change", function () {
-        if (this.checked) {
-            menu.classList.add("active")
-        } else {
-            menu.classList.remove("active")
-        }
-    });
-});
