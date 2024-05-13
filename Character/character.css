@@ -28,16 +28,18 @@ ul {
     gap: 8vw;
 }
 
-.class-description img{
-    width: 30%;
-    border-radius: 5vw;
-}
 
 .class-description {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 5vw;
+    height: 40vw;
+}
+
+.class-description img{
+    width: 30%;
+    border-radius: 5vw;
 }
 
 .description {
@@ -96,16 +98,12 @@ ul {
 
 @media (max-width: 1024px) {
     body{
-        min-height: 260vw;
+        min-height: 280vw;
         gap: 10vw;
     }
 
-    .class-description img{
-        width: 50%;
-    }
-
+    
     .container{
-        height: 150vw;
         gap: 15vw;
     }
     
@@ -114,8 +112,13 @@ ul {
         justify-content: center;
         align-items: center;
         text-align: center;
+        height: 145vw;
     }
-
+    
+    .class-description img{
+        width: 50%;
+    }
+    
     .description{
         width: 70%;
         gap: 4vw;

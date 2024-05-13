@@ -28,14 +28,16 @@
         gap: 8vw;
     }
 
-    .class-description img{
-        width: 35%;
-    }
-
+    
     .class-description {
         display: flex;
         justify-content: center;
         gap: 5vw;
+        height: 35vw;
+    }
+
+    .class-description img{
+        width: 35%;
     }
 
     .description {
@@ -109,6 +111,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            height: 110vw;
         }
 
         .description{
