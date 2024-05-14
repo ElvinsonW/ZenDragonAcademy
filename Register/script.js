@@ -57,7 +57,7 @@ form.addEventListener("submit", function(e){
         email_error.style.display = "block"
     }
     else if(!(email.value.endsWith("@gmail.com"))){
-        email_error.innerText = "*Email must end with @gmail.com"
+        email_error.innerText = "*Email must end with @gmail.com and can't only contain @gmail.com"
         email_error.style.display = "block"
     }
     else if(!termsconditions.checked){
@@ -69,7 +69,7 @@ form.addEventListener("submit", function(e){
         }, 1000);
     }
     else{
-        window.location.href = "../website/classes.html"
+        window.location.href = "../Home/home.html"
     }
 
     function validateAlphabetical(input){
@@ -86,11 +86,20 @@ form.addEventListener("submit", function(e){
         if(input[0] < 'A' || input[0] > 'Z'){
             return false
         }
-        for (let i = 1; i < input.length; i++) {
-            let prev = input[i-1]
-            let character = input[i]
-            if ((character < 'a' || character >'z') || (prev == ' ' && (character >= 'a' && character <='z'))) {
+        let words = input.split(' ');
+
+        for (let i = 0; i < words.length; i++) {
+            let word = words[i];
+
+            if (word[0] < 'A' || word[0] > 'Z') {
                 return false;
+            }
+            else{
+                for(let j = 1 ; j < word.length ; j++){
+                    if(word[j] < 'a' || word[j] > 'z'){
+                        return false
+                    }
+                }
             }
         }
         return true

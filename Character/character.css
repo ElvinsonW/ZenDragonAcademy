@@ -87,21 +87,20 @@ ul {
 }
 
 .element img.clicked {
-    transform: scale(1.168) translateY(-1rem);
+    transform: scale(1.168) translateY(-1vw);
     border-radius: 255px;
     border: 3px solid #FFC369;
 }
 
-.element img:hover{
+/* .element img:hover{
     transform: scale(1.01) translateY(-0.618rem);
-}
+} */
 
 @media (max-width: 1024px) {
     body{
         min-height: 280vw;
         gap: 10vw;
     }
-
     
     .container{
         gap: 15vw;
@@ -140,5 +139,11 @@ ul {
         width: 12vw;
         height: 12vw;
     }
+
+    /* .element img:hover{
+        transform: none;
+    } */
+
+    
 }
 
