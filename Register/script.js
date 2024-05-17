@@ -29,7 +29,7 @@ form.addEventListener("submit", function(e){
         firstname_error.style.display = "block"
     }
     else if(!validateAlphabetical(firstname.value)){
-        firstname_error.innerText = "*First name must only contain alphabetical characters"
+        firstname_error.innerText = "*First name must only contain alphabetical characters and spaces"
         firstname_error.style.display = "block"
     }
     else if(!validateCapital(firstname.value)){
@@ -37,7 +37,11 @@ form.addEventListener("submit", function(e){
         firstname_error.style.display = "block"
     }
     else if(!validateAlphabetical(lastname.value)){
-        lastname_error.innerText = "*Last name must only contain alphabetical characters"
+        lastname_error.innerText = "*Last name must only contain alphabetical characters and spaces"
+        lastname_error.style.display = "block"
+    }
+    else if(!validateCapital(lastname.value)){
+        lastname_error.innerText = "*The first character must be capitalized and the rest uncapitalized"
         lastname_error.style.display = "block"
     }
     else if(!female.checked && !male.checked){
@@ -50,6 +54,10 @@ form.addEventListener("submit", function(e){
     }
     else if(address.value.length > 50){
         address_error.innerText = "*Address mustn't exceed 50 characters"
+        address_error.style.display = "block"
+    }
+    else if(!validateAlphaNum(address.value)){
+        address_error.innerText = "*Address must only contain alphabetical characters, numbers, spaces and commas"
         address_error.style.display = "block"
     }
     else if(email.value == "" || email.value == undefined){
@@ -75,7 +83,17 @@ form.addEventListener("submit", function(e){
     function validateAlphabetical(input){
         for (let i = 0; i < input.length; i++) {
             let character = input[i]
-            if (((character < 'a' || character > 'z') && (character < 'A' || character > 'Z') && character != ' ')) {
+            if ((character < 'a' || character > 'z') && (character < 'A' || character > 'Z') && character != ' ') {
+                return false;
+            }
+        }
+        return true
+    }
+
+    function validateAlphaNum(input){
+        for (let i = 0; i < input.length; i++) {
+            let character = input[i]
+            if ((character < 'a' || character > 'z') && (character < 'A' || character > 'Z') && (character < '0' || character > '9')  && character != ' ' && character != ',' ) {
                 return false;
             }
         }
