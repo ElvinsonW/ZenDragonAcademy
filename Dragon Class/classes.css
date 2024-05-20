@@ -104,14 +104,14 @@
 
         .container{
             height: 150vw;
-            gap: 18vw;
+            gap: 15vw;
         }
         
         .class-description{
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            height: 110vw;
+            height: 120vw;
         }
 
         .description{

@@ -32,9 +32,7 @@ ul {
 .class-description {
     display: flex;
     justify-content: center;
-    align-items: center;
     gap: 5vw;
-    height: 40vw;
 }
 
 .class-description img{
@@ -45,11 +43,12 @@ ul {
 .description {
     display: flex;
     flex-direction: column;
-    gap: 2vw;
+    gap: 1vw;
     color: #fff;
     letter-spacing: 1.618px;
     width: 45%;
-    height: fit-content;
+    height: 33vw;
+    transform: translateY(2vw);
 }
 
 .description h1{
@@ -87,7 +86,7 @@ ul {
 }
 
 .element img.clicked {
-    transform: scale(1.168) translateY(-1vw);
+    transform: scale(1.168) translateY(-1.25vw);
     border-radius: 255px;
     border: 3px solid #FFC369;
 }
@@ -103,7 +102,7 @@ ul {
     }
     
     .container{
-        gap: 15vw;
+        gap: 12.5vw;
     }
     
     .class-description{
@@ -111,7 +110,6 @@ ul {
         justify-content: center;
         align-items: center;
         text-align: center;
-        height: 145vw;
     }
     
     .class-description img{
@@ -120,7 +118,9 @@ ul {
     
     .description{
         width: 70%;
+        height: 75vw;
         gap: 4vw;
+        transform: none;
     }
 
     .description h1{
@@ -140,10 +140,8 @@ ul {
         height: 12vw;
     }
 
-    /* .element img:hover{
-        transform: none;
-    } */
-
-    
+    .element img.clicked {
+        transform: scale(1.168) translateY(-2vw);
+    }
 }
 
