@@ -88,10 +88,6 @@
         border: 3px solid #FFC369;
     }
 
-    .element img:hover{
-        transform: scale(1.01) translateY(-0.618rem);
-    }
-
     @media only screen and (max-width: 1024px){
         body{
             min-height: 250vw;

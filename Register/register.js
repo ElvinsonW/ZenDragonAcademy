@@ -65,7 +65,11 @@ form.addEventListener("submit", function(e){
         email_error.style.display = "block"
     }
     else if(!(email.value.endsWith("@gmail.com"))){
-        email_error.innerText = "*Email must end with @gmail.com and can't only contain @gmail.com"
+        email_error.innerText = "*Email must end with @gmail.com"
+        email_error.style.display = "block"
+    }
+    else if(email.value.length <= 10){
+        email_error.innerText = "*Email can't only contain @gmail.com"
         email_error.style.display = "block"
     }
     else if(!termsconditions.checked){
